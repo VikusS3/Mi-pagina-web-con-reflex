@@ -15,11 +15,11 @@ export default function Component() {
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box>
   <HStack sx={{"position": "sticky", "bg": "#17161B", "paddingX": "2em", "paddingY": "1em", "zIndex": "999", "top": "0"}}>
-  <Box sx={{"fontSize": "1.5em", "fontFamily": "Comfortaa-Medium"}}>
-  <Text as={`span`} sx={{"color": "#950101", "fontFamily": "Comfortaa-Medium"}}>
+  <Box sx={{"fontSize": "1.5em", "fontFamily": "Comfortaa", "fontWeight": "500"}}>
+  <Text as={`span`} sx={{"color": "#950101", "fontFamily": "Comfortaa"}}>
   {`saul`}
 </Text>
-  <Text as={`span`} sx={{"color": "#B01212", "fontFamily": "Comfortaa-Medium"}}>
+  <Text as={`span`} sx={{"color": "#B01212", "fontFamily": "Comfortaa"}}>
   {`dev`}
 </Text>
 </Box>
@@ -31,20 +31,20 @@ export default function Component() {
   <Avatar name={`VikusS3 dev`} size={`xl`} src={`avatar.jpg`} sx={{"color": "#17161B", "bg": "#950101", "padding": "2px", "boder": "5px", "boderColor": "#950101"}}/>
   <VStack alignItems={`start`}>
   <Heading size={`lg`} sx={{"color": "#F1F2F4"}}>
-  {`saul orellana`}
+  {`Saul Orellana`}
 </Heading>
   <Text sx={{"maringTop": ["0px !important"], "color": "#C3C7CB"}}>
   {`@vikusss3dev`}
 </Text>
   <HStack spacing={`2em`}>
   <Link as={NextLink} href={`https://github.com/VikusS3`} isExternal={true} sx={{"textDecoration": "none", "_hover": {}}}>
-  <ChakraImage src={`icons/github.svg`} sx={{"width": "2em"}}/>
+  <ChakraImage alt={`Github`} src={`icons/github.svg`} sx={{"width": "2em"}}/>
 </Link>
   <Link as={NextLink} href={`https://github.com/SaulFOC`} isExternal={true} sx={{"textDecoration": "none", "_hover": {}}}>
-  <ChakraImage src={`icons/github-alt.svg`} sx={{"width": "2em"}}/>
+  <ChakraImage alt={`Github-Alt`} src={`icons/github-alt.svg`} sx={{"width": "2em"}}/>
 </Link>
   <Link as={NextLink} href={`https://facebook.com/profile.php?id=61554249853628&locale=es_LA`} isExternal={true} sx={{"textDecoration": "none", "_hover": {}}}>
-  <ChakraImage src={`icons/facebook.svg`} sx={{"width": "2em"}}/>
+  <ChakraImage alt={`Facebook`} src={`icons/facebook.svg`} sx={{"width": "2em"}}/>
 </Link>
 </HStack>
 </VStack>
@@ -79,18 +79,18 @@ export default function Component() {
 </Text>
 </VStack>
   <VStack spacing={`1em`} sx={{"width": "100%"}}>
-  <Heading size={`lg`} sx={{"width": "100%", "fontFamily": "Comfortaa-Regular", "paddingTop": "1em", "color": "#F1F2F4"}}>
+  <Heading size={`lg`} sx={{"width": "100%", "fontFamily": "Comfortaa", "fontWeight": "500", "paddingTop": "1em", "color": "#F1F2F4"}}>
   {`Mis Redes Sociales`}
 </Heading>
   <Link as={NextLink} href={`https://www.twitch.tv/vikussss3`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
-  <HStack>
-  <ChakraImage src={`icons/twitch.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"]}}>
-  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa-Regular", "color": "#F1F2F4"}}>
+  <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
+  <HStack sx={{"width": "100%"}}>
+  <ChakraImage alt={`Twitch`} src={`icons/twitch.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"], "paddingRight": "0.5em"}}>
+  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Twitch`}
 </Text>
-  <Text sx={{"fontSize": "0.8em", "fontFamily": "Arial, Helvetica, sans-serif", "Color": "#C3C7CB"}}>
+  <Text sx={{"fontSize": "0.8em", "fontWeight": "300", "fontFamily": "Poppins", "Color": "#C3C7CB"}}>
   {`Directos de vez en cuando`}
 </Text>
 </VStack>
@@ -98,14 +98,14 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.youtube.com/channel/UCWTqiQVIA08vVTJhwy1SaDQ`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
-  <HStack>
-  <ChakraImage src={`icons/youtube.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"]}}>
-  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa-Regular", "color": "#F1F2F4"}}>
+  <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
+  <HStack sx={{"width": "100%"}}>
+  <ChakraImage alt={`Youtube`} src={`icons/youtube.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"], "paddingRight": "0.5em"}}>
+  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Youtube`}
 </Text>
-  <Text sx={{"fontSize": "0.8em", "fontFamily": "Arial, Helvetica, sans-serif", "Color": "#C3C7CB"}}>
+  <Text sx={{"fontSize": "0.8em", "fontWeight": "300", "fontFamily": "Poppins", "Color": "#C3C7CB"}}>
   {`Guias y Tutoriales`}
 </Text>
 </VStack>
@@ -113,14 +113,14 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.linkedin.com/in/felix-saul-orellana-contreras-971b042a6/`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
-  <HStack>
-  <ChakraImage src={`icons/linkedin.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"]}}>
-  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa-Regular", "color": "#F1F2F4"}}>
+  <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
+  <HStack sx={{"width": "100%"}}>
+  <ChakraImage alt={`Linkedin`} src={`icons/linkedin.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"], "paddingRight": "0.5em"}}>
+  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Linkedin`}
 </Text>
-  <Text sx={{"fontSize": "0.8em", "fontFamily": "Arial, Helvetica, sans-serif", "Color": "#C3C7CB"}}>
+  <Text sx={{"fontSize": "0.8em", "fontWeight": "300", "fontFamily": "Poppins", "Color": "#C3C7CB"}}>
   {`Informacion profesional`}
 </Text>
 </VStack>
@@ -128,32 +128,32 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://twitter.com/Vikus3S`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
-  <HStack>
-  <ChakraImage src={`icons/x-twitter.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"]}}>
-  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa-Regular", "color": "#F1F2F4"}}>
+  <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
+  <HStack sx={{"width": "100%"}}>
+  <ChakraImage alt={`Twitter`} src={`icons/x-twitter.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"], "paddingRight": "0.5em"}}>
+  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Twitter`}
 </Text>
-  <Text sx={{"fontSize": "0.8em", "fontFamily": "Arial, Helvetica, sans-serif", "Color": "#C3C7CB"}}>
+  <Text sx={{"fontSize": "0.8em", "fontWeight": "300", "fontFamily": "Poppins", "Color": "#C3C7CB"}}>
   {`Actualizacion de estados y publicaciones`}
 </Text>
 </VStack>
 </HStack>
 </Button>
 </Link>
-  <Heading size={`lg`} sx={{"width": "100%", "fontFamily": "Comfortaa-Regular", "paddingTop": "1em", "color": "#F1F2F4"}}>
+  <Heading size={`lg`} sx={{"width": "100%", "fontFamily": "Comfortaa", "fontWeight": "500", "paddingTop": "1em", "color": "#F1F2F4"}}>
   {`Contacto`}
 </Heading>
   <Link as={NextLink} href={`mailto:felix21soc@gmail.com`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
-  <HStack>
-  <ChakraImage src={`icons/envelope-solid.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"]}}>
-  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa-Regular", "color": "#F1F2F4"}}>
+  <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
+  <HStack sx={{"width": "100%"}}>
+  <ChakraImage alt={`Email`} src={`icons/envelope-solid.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"], "paddingRight": "0.5em"}}>
+  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Email`}
 </Text>
-  <Text sx={{"fontSize": "0.8em", "fontFamily": "Arial, Helvetica, sans-serif", "Color": "#C3C7CB"}}>
+  <Text sx={{"fontSize": "0.8em", "fontWeight": "300", "fontFamily": "Poppins", "Color": "#C3C7CB"}}>
   {`¿Quieres colaborar conmigo?`}
 </Text>
 </VStack>
@@ -161,14 +161,14 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`mailto:felix.orellanac@istpargentina.edu.pe`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
-  <HStack>
-  <ChakraImage src={`icons/school-solid.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"]}}>
-  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa-Regular", "color": "#F1F2F4"}}>
+  <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "boderRadius": "0.5em", "color": "#C3C7CB", "backgroundColor": "#28272C", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#950101", "color": "#F1F2F4"}}}>
+  <HStack sx={{"width": "100%"}}>
+  <ChakraImage alt={`MyEmailEducation`} src={`icons/school-solid.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": ["0px !important"], "paddingRight": "0.5em"}}>
+  <Text sx={{"fontSize": "1em", "fontFamily": "Comfortaa", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`MyEmailEducation`}
 </Text>
-  <Text sx={{"fontSize": "0.8em", "fontFamily": "Arial, Helvetica, sans-serif", "Color": "#C3C7CB"}}>
+  <Text sx={{"fontSize": "0.8em", "fontWeight": "300", "fontFamily": "Poppins", "Color": "#C3C7CB"}}>
   {`felix.orellanac@istpargentina.edu.pe`}
 </Text>
 </VStack>
@@ -178,8 +178,8 @@ export default function Component() {
 </VStack>
 </VStack>
 </Center>
-  <VStack sx={{"marginBottom": "2em", "paddingBottom": "2em", "color": "#A3ABB2"}}>
-  <ChakraImage src={`logo.png`}/>
+  <VStack spacing={`1em`} sx={{"marginBottom": "2em", "paddingBottom": "2em", "color": "#A3ABB2", "paddingX": "2em"}}>
+  <ChakraImage alt={`Logotipo de SaulDev. Una "v mas d" con un cuadrado en el centro`} src={`logo.png`} sx={{"heigth": "4em", "weight": "4em"}}/>
   <Link as={NextLink} href={`https://www.linkedin.com/in/felix-saul-orellana-contreras-971b042a6/`} isExternal={true} sx={{"fontSize": "0.8em", "textDecoration": "none", "_hover": {}}}>
   {`© 2021-2023 VikusS3dev V1 By Saul Orellana`}
 </Link>

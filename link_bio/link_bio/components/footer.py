@@ -10,6 +10,9 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
             src="logo.png",
+            heigth=Size.VERY_BIG.value,
+            weight=Size.VERY_BIG.value,
+            alt="Logotipo de SaulDev. Una \"v mas d\" con un cuadrado en el centro", 
         ),
         rx.link(
             f"© 2021-{dt.datetime.today().year} VikusS3dev V1 By {my_info.NOMBRE_Y_APELLIDO}",
@@ -26,5 +29,7 @@ def footer() -> rx.Component:
         margin_bottom=Size.BIG.value,
         padding_bottom=Size.BIG.value,
         color=TextColor.FOOTER_COLOR.value,
+        spacing=Size.DEFAULT.value,
+        padding_x=Size.BIG.value,
     )
     

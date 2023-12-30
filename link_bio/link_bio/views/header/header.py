@@ -24,7 +24,7 @@ def header() -> rx.Component:
             ),
             rx.vstack(
                 rx.heading(
-                    "saul orellana",
+                    "Saul Orellana",
                     size="lg",
                     color=TextColor.HEADER_COLOR.value,
                 ),
@@ -37,14 +37,17 @@ def header() -> rx.Component:
                     link_icon(
                         "icons/github.svg",
                         constants.GITHUB_URL,
+                        "Github"
                     ),
                     link_icon(
                         "icons/github-alt.svg",
                         constants.SECONDARY_ACCOUNT_GITHUB_URL,
+                        "Github-Alt"
                     ),
                     link_icon(
                         "icons/facebook.svg",
                         constants.FACEBOOK_URL,
+                        "Facebook"
                     ),
                     spacing=Size.BIG.value,
                 ),
